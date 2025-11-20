@@ -1,0 +1,7 @@
+   # PICO-8 backups
+   *.p8.png~
+   *.p8~
+   
+   # OS files
+   .DS_Store
+   Thumbs.db
