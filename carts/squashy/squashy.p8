@@ -8,6 +8,14 @@ padw = 24
 padh = 4
 padspeed = 4
 
+-- ball
+ballx = 64
+bally = 64
+ballsize = 3
+ballxdir = 5
+ballydir = -3
+
+
 function movepaddle()
 	if btn(0) then
 		padx -= padspeed
@@ -16,14 +24,56 @@ function movepaddle()
 	end
 end
 
+function moveball()
+	ballx += ballxdir
+	bally += ballydir
+end
+
+function bounceball()
+ -- left
+ if ballx < ballsize then
+ 	ballxdir =- ballxdir
+ 	sfx(0)
+ end
+
+ -- right
+ if ballx > 128-ballsize then
+ 	ballxdir =- ballxdir
+ 	sfx(0)
+ end
+
+ -- top
+ if bally < ballsize then
+ 	ballydir =- ballydir
+ 	sfx(0)
+ end
+end
+
+function bouncepaddle()
+	if ballx >= padx and
+	ballx <= padx+padw and
+	bally >= pady-4 then
+		sfx(0)
+		ballydir = -ballydir
+	end
+end
+
 function _update()
 	movepaddle()
+	bounceball()
+	moveball()
+	bouncepaddle()
 end
 
 function _draw()
 	cls()
 	
+	-- draw paddle
 	rectfill(padx, pady, padx+padw, pady+padh, 15)
+	
+	-- draw ball
+	circfill(ballx, bally, ballsize, 15)
+	
 end
 __gfx__
 00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
@@ -32,3 +82,5 @@ __gfx__
 00077000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
 00077000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
 00700700000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
+__sfx__
+000100003505000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
