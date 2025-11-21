@@ -63,6 +63,13 @@ function _update()
 	bounceball()
 	moveball()
 	bouncepaddle()
+	losedeadball()
+end
+
+function losedeadball()
+	if bally > 128 then
+		bally = 24
+	end
 end
 
 function _draw()
