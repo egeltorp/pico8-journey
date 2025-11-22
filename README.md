@@ -28,7 +28,7 @@ I have quite a bit of previous game dev experience (Godot/Unity) but I must admi
 
 ### Beginner Projects
 - ~~Breakout variant~~
-- Pong/Squashy (following Zine #1)
+- ~~Pong/Squashy~~ (following Zine #1)
 - Snake game
 - Simple space shooter
 
