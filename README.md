@@ -29,8 +29,8 @@ I have quite a bit of previous game dev experience (Godot/Unity) but I must admi
 ### Beginner Projects
 - ~~Breakout variant~~
 - ~~Pong/Squashy~~ (following Zine #1)
-- Snake game
-- Simple space shooter
+- ~~Mash It~~ (for 20 Second Game Jam 2025)
+- Simple space shoot-em-up
 
 ### Intermediate Projects
 - Platformer with basic physics
