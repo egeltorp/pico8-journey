@@ -79,6 +79,6 @@ _I'll update this section as I work through projects._
 ---
 
 **Started:** 2025-11-20  
-**Current Phase:** Phase 2 - Practice
+**Current Phase:** Phase 2 - Practice  
 **Last Project:** Breakout  
 **Last Updated:** 2025-11-20
