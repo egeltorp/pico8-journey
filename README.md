@@ -30,7 +30,6 @@ I have quite a bit of previous game dev experience (Godot/Unity) but I must admi
 - ~~Breakout variant~~
 - ~~Pong/Squashy~~ (following Zine #1)
 - ~~Mash It~~ (for 20 Second Game Jam 2025)
-- Simple space shoot-em-up
 
 ### Intermediate Projects
 - Platformer with basic physics
@@ -46,7 +45,7 @@ I have quite a bit of previous game dev experience (Godot/Unity) but I must admi
 
 ## Roadmap
 
-### Phase 1: Foundations
+### Phase 1: ~~Foundations~~
 - Complete PICO-8 Zine #1 entirely
 - Type every line of code myself (no copy/paste)
 - Make notes on concepts I don't understand
